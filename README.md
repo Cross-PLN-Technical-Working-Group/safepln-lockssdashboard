@@ -155,6 +155,8 @@ Promtail agents running on the boxes must be configured to collect the following
 The machine running the dashboard should authorize access to input port 3100/TCP for all LOCKSS boxes IP addresses in the netw
 ork.
 
+Check the [instructions_promtail_prometheus.md](./instructions_promtail_prometheus.md) file for detailed instructions on how to configure Promtail and Prometheus.
+
 ### Prometheus (optional)
 
 Prometheus is an advanced monitoring and alert system integrated with the dashboard to collect metrics from all LOCKSS boxes i
@@ -168,6 +170,8 @@ Node exporter agents running on the boxes must be configured to collect the foll
 ```
 
 LOCKSS boxes should authorize access to input port 9100/TCP for the machine running the dashboard.
+
+Check the [instructions_promtail_prometheus.md](./instructions_promtail_prometheus.md) file for detailed instructions on how to configure Promtail and Prometheus.
 
 ## LOCKSS network dashboard components
 
@@ -192,9 +196,11 @@ In all Grafana dashboards, the user can set thresholds on relevant metrics to tr
 ![Dashboard alerts and reporting](https://anthonyleroy.github.io/lockss-dashboard/LOCKSS_network_dashboard_alerts_and_reporting.jpeg)
 
 
-## Known issue 
+## Known issues 
 
 ### SOAP access to LOCKSS boxes with SSL enabled
 While the Daemon Status web service is directly accessible with basic authentication, when SSL is switched on, the authenticat
 ion is done with a form-based login webpage and prevents using the web service. Given that the access control mechanism will b
 e considerably improved in LAAWS, it seemed more useful to focus on the other plnmonitor features.
+
+## 
