@@ -1,0 +1,20 @@
+﻿lockssboxes:
+  "ULB":
+    ip: 164.15.1.85
+    uiport: 8081
+    latitude:
+    longitude:
+    country: "Belgium"
+    username: debug
+    password: debuglockss
+  "UCLouvain":
+    ip: 164.15.1.85
+    uiport: 8081
+    latitude:
+    longitude:
+    country: "Belgium"
+    username: debug
+    password: debuglockss
+    
+tdb:
+  ""

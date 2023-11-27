@@ -41,6 +41,7 @@ services:
     volumes:
       - ./template:/opt/template
       - ./provisioning:/opt/provisioning
+      - ./config:/opt/config
 
   plnmonwebapp:
     build: 
