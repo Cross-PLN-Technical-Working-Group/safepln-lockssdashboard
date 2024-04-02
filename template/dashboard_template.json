@@ -1326,6 +1326,7 @@
       "title": "AU status across the network",
       "type": "table"
     },
+    
     {
       "datasource": null,
       "fieldConfig": {
@@ -1865,6 +1866,188 @@
           }
         }
       ],
+      "type": "table"
+    },
+       {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "green",
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+          	    "type": "gauge",
+                "mode": "basic",
+                "valueDisplayMode": "text"
+        	},
+            "filterable": true,
+            "width": 100
+          },
+          "decimals": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-blue",
+                "value": null
+              }
+            ]
+          },
+          "decimals": 0,
+          "max": 1,
+          "min": 0,
+          "noValue": "-",
+          "unit": "decbytes"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "name"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "auto"
+              },
+              {
+                "id": "custom.width",
+                "value": null
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "unibi"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 125
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "unige"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 125
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "udem"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 125
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lund"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 125
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ugent"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 125
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ucl"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 125
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ulb"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 125
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 39,
+        "w": 24,
+        "x": 0,
+        "y": 115
+      },
+      "id": 20,
+      "options": {
+        "showHeader": true
+      },
+      "pluginVersion": "7.5.5",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "AUSIZEPIVOTRAWSQLREQUEST",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "recent_poll_agreement"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "au_current",
+          "timeColumn": "created_at",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "title": "AU status across the network",
       "type": "table"
     }
   ],

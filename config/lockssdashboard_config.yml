@@ -1,20 +1,25 @@
-﻿lockssboxes:
-  "ULB":
-    ip: 164.15.1.85
-    uiport: 8081
-    latitude:
-    longitude:
-    country: "Belgium"
-    username: debug
-    password: debuglockss
-  "UCLouvain":
-    ip: 164.15.1.85
-    uiport: 8081
-    latitude:
-    longitude:
-    country: "Belgium"
-    username: debug
-    password: debuglockss
-    
-tdb:
-  ""
+﻿lockssnetworks:
+  safepln:
+    propsUrl: http://lockssadmin.ulb.ac.be/lockss.xml
+    lockssboxes:
+      ULB:
+        ip: 164.15.1.85
+        uiport: 8081
+        latitude:
+        longitude:
+        country: "Belgium"
+        username: "debug"
+        password: "debuglockss"
+        visible: true
+      "UCLouvain":
+        ip: 164.15.1.87
+        uiport: 8081
+        latitude:
+        longitude:
+        country: "Belgium"
+        username: debug
+        password: debuglockss
+        visible: true
+    tdb:
+        "Université libre de Bruxelles"
+        "UClouvain"  
