@@ -384,7 +384,7 @@
           ]
         }
       ],
-      "title": "Avg copies/AU",
+      "title": "Avg peer-validated copies/AU",
       "transparent": true,
       "type": "stat"
     },
